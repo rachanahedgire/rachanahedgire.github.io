@@ -1,0 +1,797 @@
+{
+ "hero": {
+  "first": "Rachana",
+  "last": "Hedgire",
+  "role": "Architect | Urban Planner",
+  "line": "Bringing together design, landscapes, and an understanding of urban systems."
+ },
+ "about": {
+  "eyebrow": "About me",
+  "tagline": "I like exploring design, spaces, mountains.",
+  "title": "",
+  "intro": "",
+  "lists": [
+   {
+    "title": "Softwares and skills",
+    "chips": true,
+    "items": [
+     "QGIS",
+     "AutoCAD",
+     "Revit",
+     "SketchUp",
+     "Adobe Photoshop",
+     "Adobe InDesign",
+     "MS Office",
+     "MySQL",
+     "Python",
+     "R"
+    ]
+   },
+   {
+    "title": "Methods",
+    "items": [
+     "Spatial analysis",
+     "Thematic mapping",
+     "Data visualisation",
+     "Land-use and site analysis"
+    ]
+   },
+   {
+    "title": "Interests",
+    "items": [
+     "Architectural design, vernacular architecture",
+     "GIS and spatial analysis, transport planning, climate resilience"
+    ]
+   },
+   {
+    "title": "Beyond work",
+    "chips": true,
+    "items": [
+     "Model making",
+     "Athletics",
+     "Rock climbing",
+     "Trekking",
+     "Photography"
+    ]
+   },
+   {
+    "title": "Languages",
+    "items": [
+     "English",
+     "Hindi",
+     "Marathi",
+     "Kannada"
+    ]
+   }
+  ],
+  "timeline": [
+   {
+    "lane": "Education",
+    "title": "Bachelor of Architecture",
+    "sub": "SMEF’s Brick School of Architecture, Pune",
+    "when": "2020–25",
+    "a": 2020.55,
+    "b": 2025.45
+   },
+   {
+    "lane": "Education",
+    "title": "Master of City Planning",
+    "sub": "IIT Kharagpur",
+    "when": "2025–27",
+    "a": 2025.55,
+    "b": 2027.45
+   },
+   {
+    "lane": "Research",
+    "title": "Exploring Nature, Culture and Settlements",
+    "sub": "Western Ghats cultural landscape and settlements · publication with ICOMOS India",
+    "when": "2021–23",
+    "a": 2021,
+    "b": 2023.99
+   },
+   {
+    "lane": "Experience",
+    "title": "Volunteer, Suru Valley community project",
+    "sub": "NASA India Summer–Winter School · Ladakh",
+    "when": "2024",
+    "a": 2024.38,
+    "b": 2024.56
+   },
+   {
+    "lane": "Experience",
+    "title": "Architectural intern, Environs Architects",
+    "sub": "Pune",
+    "when": "Jun–Nov 2024",
+    "a": 2024.42,
+    "b": 2024.92
+   },
+   {
+    "lane": "Experience",
+    "title": "Urban planning intern, Janaagraha",
+    "sub": "Policy team, with Jana Urban Space Foundation · Bengaluru",
+    "when": "May–Oct 2026",
+    "a": 2026.33,
+    "b": 2026.83
+   }
+  ],
+  "photo": "img/u/f3ea32e7e070cc3fd175c3914484d2a1.webp"
+ },
+ "projectsIntro": {
+  "eyebrow": "Projects",
+  "title": "Selected work"
+ },
+ "sections": [
+  {
+   "id": "architecture",
+   "name": "Architecture",
+   "line": "Architectural design across residential, hospitality and institutional projects, from conceptual development to technical drawings.",
+   "groups": [
+    {
+     "id": "vernacular",
+     "name": "Vernacular Architecture | Construction Workshop",
+     "note": "Suru Valley, Ladakh · 2024"
+    },
+    {
+     "id": "academic",
+     "name": "Academic projects",
+     "note": "B.Arch",
+     "parts": [
+      "Design projects",
+      "Working drawings"
+     ]
+    },
+    {
+     "id": "internship",
+     "name": "Internship",
+     "note": "Environs Architects, Pune · June–November 2024",
+     "parts": [
+      "Institutional",
+      "Industrial"
+     ]
+    },
+    {
+     "id": "freelance",
+     "name": "Freelance",
+     "note": "Brochure design"
+    }
+   ]
+  },
+  {
+   "id": "urban-design",
+   "name": "Urban Design",
+   "line": "Cultural heritage, public space design, pedestrian connectivity and recreational infrastructure.",
+   "groups": [
+    {
+     "id": "ud-academic",
+     "name": "Academic projects",
+     "note": "B.Arch"
+    }
+   ]
+  },
+  {
+   "id": "city-planning",
+   "name": "City Planning",
+   "line": "Spatial analysis, demographic assessment, GIS and infrastructure planning.",
+   "groups": [
+    {
+     "id": "pl-academic",
+     "name": "Academic projects",
+     "note": "Master of City Planning, IIT Kharagpur · 2025–26"
+    },
+    {
+     "id": "pl-intern",
+     "name": "Internship",
+     "note": "Janaagraha · May–October 2026"
+    }
+   ]
+  }
+ ],
+ "projects": [
+  {
+   "id": "suru",
+   "g": "vernacular",
+   "type": "Construction workshop",
+   "name": "Suru Valley Community Centre",
+   "place": "Suru Valley, Ladakh",
+   "what": "A community centre for the Suru Valley festival, holding the kitchen and lounge areas. Built during the NASA India Summer–Winter School with Crash Pad (New Delhi) and Simple Architecture (Bangkok).",
+   "work": [
+    "Rock and mud from the site",
+    "Timber from the local market",
+    "Old army sleeping bags as roof insulation",
+    "Oil tins as the final roof layer"
+   ],
+   "workT": "How it was built",
+   "facts": [
+    [
+     "Programme",
+     "NASA India Summer–Winter School, 2024"
+    ],
+    [
+     "Today",
+     "Open all year as a base for visitors"
+    ]
+   ],
+   "imgs": [
+    "sv-built",
+    "sv-valley",
+    "sv-mud",
+    "sv-frame",
+    "sv-team",
+    "sv-roof",
+    "sv-crowd"
+   ]
+  },
+  {
+   "id": "aikyam",
+   "g": "academic",
+   "part": "Design projects",
+   "type": "Housing",
+   "name": "Aikyam",
+   "place": "Pune, Maharashtra",
+   "what": "Housing for a mix of residents, from single people and migrant families to large families and older people, with a shopping complex.",
+   "work": [
+    "Site study",
+    "Form development",
+    "Master plan and floor plans",
+    "Flat layouts, section and views"
+   ],
+   "facts": [
+    [
+     "SitE area",
+     "8,945 m²"
+    ],
+    [
+     "Height",
+     "35 floors"
+    ]
+   ],
+   "imgs": [
+    "img/u/af3e71c965faf48bf0708c366be6947c.webp",
+    "img/u/79008e1644939027cdee8f4d6f0ab5f0.webp",
+    "img/u/3fc8ce4abe0393b08b4520314aa2fbbc.webp"
+   ]
+  },
+  {
+   "id": "leaf",
+   "g": "academic",
+   "part": "Design projects",
+   "type": "Campus design",
+   "name": "Leaf Cosmetics",
+   "place": "Pune, Maharashtra",
+   "what": "A research campus for a cosmetics company, with labs and offices, plus exhibits, product testing, shops and a café.",
+   "work": [
+    "Site study",
+    "Staggered blocks for daylight",
+    "Plans, sections and elevations",
+    "Views",
+    "Facade panel details"
+   ],
+   "facts": [
+    [
+     "Site Area",
+     "12,430 m² (3.07 acres)"
+    ]
+   ],
+   "imgs": [
+    "img/u/0178aeb5096cccc358589d04816b6497.webp",
+    "img/u/5c4f8997659286adb7ca043c44500563.webp",
+    "img/u/673b7e85a2c7041896a1d5d55b18d688.webp"
+   ]
+  },
+  {
+   "id": "showroom",
+   "g": "academic",
+   "part": "Design projects",
+   "type": "Steel structure design",
+   "name": "Furniture Showroom & Workshop",
+   "place": "Pune, Maharashtra",
+   "what": "A furniture showroom with a workshop behind it, under a long-span steel roof. Group project.",
+   "work": [
+    "Form development",
+    "Plans",
+    "Roof truss, column and joint details",
+    "Views"
+   ],
+   "facts": [
+    [
+     "Site area",
+     "11,430 m²"
+    ]
+   ],
+   "imgs": [
+    "ar-showroom",
+    "img/u/a55394ac2b5d21f4b632e52e12e42cdb.webp",
+    "img/u/2a55fbbeadd5dd35f1796362f200123d.webp"
+   ]
+  },
+  {
+   "id": "niravanam",
+   "g": "academic",
+   "part": "Design projects",
+   "type": "Hotel design",
+   "name": "Niravanam",
+   "place": "Ahmedabad, Gujarat",
+   "what": "A five-star leisure hotel. Its form draws on the historic gates of Ahmedabad and rises to a 20-storey room tower.",
+   "work": [
+    "Site study and zoning",
+    "Form development",
+    "Plans of every floor",
+    "Room layouts, sections and views",
+    "Basement services"
+   ],
+   "facts": [
+    [
+     "Site Area",
+     "12,860 m² (3.17 acres)"
+    ],
+    [
+     "Height",
+     "20 floors"
+    ]
+   ],
+   "imgs": [
+    "img/u/7d7728f51cf88a35f74b9e3d75062b74.webp",
+    "img/u/781d35b57fe2fd1edc0e9cf97d8fa348.webp",
+    "img/u/71e54d350f9f01c06b90f467697f2af2.webp",
+    "img/u/201f4e162f4835b176c6d4645cd4c6b1.webp"
+   ]
+  },
+  {
+   "id": "admin",
+   "g": "academic",
+   "part": "Working drawings",
+   "type": "Working drawings",
+   "name": "Admin Office",
+   "place": "",
+   "what": "A set of construction drawings for a two-storey office building.",
+   "work": [
+    "Ground floor and foundation plans",
+    "Sections",
+    "Staircase details",
+    "Toilet details"
+   ],
+   "facts": [],
+   "imgs": [
+    "img/u/48008d1a26cead0a14914cd30055f35b.webp"
+   ],
+   "cover": "ar-admin",
+   "detail": "Two-storey framed building"
+  },
+  {
+   "id": "enpro",
+   "g": "internship",
+   "part": "Industrial",
+   "type": "Industrial",
+   "name": "Enpro Industries, Phase IV",
+   "place": "Pune, Maharashtra",
+   "what": "A new phase of a factory complex.",
+   "work": [
+    "Tender drawings: toilet and flooring details",
+    "Working drawings: centre line plan, steel staircase"
+   ],
+   "facts": [],
+   "imgs": [
+    "pr-enpro",
+    "en-toilet",
+    "en-flooring",
+    "en-centerline",
+    "pr-stair"
+   ]
+  },
+  {
+   "id": "ycmou",
+   "g": "internship",
+   "part": "Institutional",
+   "type": "Institutional",
+   "name": "YCMOU Regional Centres",
+   "place": "Nashik, Maharashtra",
+   "what": "Buildings for a regional centre of Yashwantrao Chavan Maharashtra Open University at Nashik: a multipurpose building, a hostel, the vice-chancellor’s bungalow and staff housing.",
+   "work": [
+    "Presentation drawings",
+    "3D views"
+   ],
+   "facts": [],
+   "imgs": [
+    "pr-bungalow",
+    "ym-bungalow1",
+    "pr-ycmou",
+    "pr-hostel",
+    "ym-first",
+    "pr-court"
+   ]
+  },
+  {
+   "id": "rivershrine",
+   "g": "freelance",
+   "type": "Brochure design",
+   "name": "Bungalow",
+   "place": "Aldona, North Goa",
+   "what": "A sales brochure for a three-storey villa that blends Goa’s Portuguese heritage with a modern coastal interior.",
+   "work": [
+    "Plan rendering",
+    "Location map",
+    "Brochure layout"
+   ],
+   "note": "The 3D views in the brochure were made by others and are not shown.",
+   "role": "Plan rendering, location map and brochure layout.",
+   "facts": [
+    [
+     "Site",
+     "678.20 m²"
+    ],
+    [
+     "Built-up area",
+     "724.4 m²"
+    ],
+    [
+     "Carpet area",
+     "421.8 m²"
+    ]
+   ],
+   "imgs": [
+    "rs-plans",
+    "rs-roof",
+    "rs-area"
+   ]
+  },
+  {
+   "id": "tuljapur",
+   "g": "ud-academic",
+   "type": "Temple corridor redesign. b.Arch Thesis",
+   "name": "Tuljabhavani Temple Corridor",
+   "place": "Maharashtra",
+   "what": "A redesign of the approach corridor and forecourt of the temple in the pilgrimage town of Tuljapur.",
+   "work": [
+    "Study of the town, its routes and traffic",
+    "Master plan with gateways, a queuing complex, pilgrim facilities and shops",
+    "Sections and a palette of local stone and terracotta",
+    "Views of the new public spaces"
+   ],
+   "facts": [
+    [
+     "Site",
+     "29,000 m²"
+    ]
+   ],
+   "imgs": [
+    "img/u/54408cbc873a1793ef0ad3e1c563ac69.webp",
+    "ud-tuljapur-plan",
+    "img/u/4dd7ab6b471a6b1cec745085a59e16e2.webp",
+    "img/u/e69829605503979005fd6dc4b9daf18d.webp",
+    "img/u/5f8c3c70acff1dde1bec55b7da5d9bef.webp",
+    "img/u/bd79721054ada782d4c8de0bb61da866.webp",
+    "img/u/c3feaa388adf16438f9746e1f55c884e.webp"
+   ]
+  },
+  {
+   "id": "kolhapur",
+   "g": "ud-academic",
+   "type": "Sports complex design",
+   "name": "District Sports Centre",
+   "place": "Kolhapur, Maharashtra",
+   "what": "Vision Statement : Revitalizing sports culture within the city centre by integrating sports into daily life of its citizens.",
+   "work": [
+    "Site analysis",
+    "Figure-ground and street maps",
+    "Strategies plan",
+    "Plan of the sports centre, with a cricket ground, athletics track and indoor wrestling stadium"
+   ],
+   "facts": [
+    [
+     "Site Area",
+     "5,500 m²"
+    ]
+   ],
+   "imgs": [
+    "img/u/9f1469751c51984d439ccc273d634e50.webp",
+    "img/u/b38293bf410fbe90575d4badf174cc1b.webp",
+    "img/u/38e5764e547afd735174ad42b7bf64ed.webp",
+    "img/u/a80c9cbace554c21d9341611aff20868.webp"
+   ]
+  },
+  {
+   "id": "cooch",
+   "g": "pl-academic",
+   "type": "Greenfield master plan",
+   "name": "Cooch Behar as an industrial city",
+   "place": "Cooch Behar, West Bengal",
+   "what": "Master planning Cooch Behar as an emerging industrial city, centred on food processing and logistics to support its largely agricultural economy.",
+   "work": [
+    "Regional study and site selection",
+    "Land-use plan",
+    "Roads and freight routes",
+    "Industrial zone layout and building rules"
+   ],
+   "facts": [],
+   "imgs": [
+    "img/u/64e5d1764cd4c8a30ce3275c7afb0004.webp",
+    "img/u/0b2d08df0f88aa66e923333b7820adcc.webp"
+   ]
+  },
+  {
+   "id": "bbsr",
+   "g": "pl-academic",
+   "type": "Comprehensive development plan",
+   "name": "Bhubaneswar Vision 2045",
+   "place": "Bhubaneswar, Odisha",
+   "what": "A revised city development plan for 2045, covering its demography and socio-economic analysis.",
+   "work": [
+    "Household survey",
+    "Ward maps of density, literacy and income",
+    "Income inequality",
+    "Population projections to 2045"
+   ],
+   "facts": [
+    [
+     "Planning area",
+     "283.65 km²"
+    ],
+    [
+     "Wards",
+     "67"
+    ]
+   ],
+   "imgs": [
+    "img/u/5876a1fef3d68ba0a25990889bfcc774.webp",
+    "img/u/b4f60f5b2942e8ce6baff9f8307d68a2.webp",
+    "img/u/71dfec527e98ec2744aca55b2d5ff52c.webp",
+    "img/u/b0e93c73cced371ad4b1fdb5b5088c8e.webp"
+   ],
+   "cover": "pl-bbsr"
+  },
+  {
+   "id": "mumbai",
+   "g": "pl-academic",
+   "type": "Urban flood management",
+   "name": "Mumbai",
+   "place": "Mumbai, Maharashtra",
+   "what": "A study of why Mumbai floods and who is most at risk, with proposals to reduce the damage.",
+   "work": [
+    "Flood hotspots mapped against homes, jobs and services",
+    "Drainage study",
+    "Proposals such as sponge parks, restored natural drains and flood zoning"
+   ],
+   "facts": [],
+   "imgs": [
+    "pl-mumbai",
+    "mb-drainage",
+    "mb-exposure",
+    "mb-access",
+    "mb-proposals"
+   ]
+  },
+  {
+   "id": "kgp",
+   "g": "pl-academic",
+   "type": "Ward level planning",
+   "name": "Kharagpur Ward 28",
+   "place": "Kharagpur, West Bengal",
+   "what": "Redevelopment plan for Bich Para slum in Ward 28, Kharagpur, under the PMAY housing scheme.",
+   "work": [
+    "LiDAR and site surveys",
+    "Problem mapping",
+    "Site layout and unit plans",
+    "Cost estimate"
+   ],
+   "facts": [
+    [
+     "Site area",
+     "2,315 m²"
+    ],
+    [
+     "Units",
+     "64"
+    ]
+   ],
+   "imgs": [
+    "pl-kgp",
+    "kg-ward",
+    "kg-issues",
+    "kg-layout",
+    "kg-units"
+   ]
+  },
+  {
+   "id": "janaagraha",
+   "g": "pl-intern",
+   "type": "Internship",
+   "name": "Janaagraha and Jana Urban Space Foundation",
+   "place": "Bengaluru",
+   "what": "Worked as an urban planning intern in a Policy team.",
+   "work": [
+    "Scored urban planning questions for the Annual Survey of India’s City-Systems (ASICS) 2027 across 10 cities",
+    "Rated how open 27 Development Authorities are through their websites",
+    "Mapped planning laws across 36 states and union territories",
+    "Reviewed three master plans in Assam",
+    "Analysed high-rise growth in Hyderabad"
+   ],
+   "facts": [
+    [
+     "Cities covered",
+     "16"
+    ],
+    [
+     "States and UTs mapped",
+     "36"
+    ]
+   ],
+   "imgs": [
+    "jg-map"
+   ],
+   "svg": 1,
+   "detail": "May–October 2026",
+   "workCities": [
+    [
+     "Bengaluru",
+     "Hyderabad",
+     "Chennai",
+     "Mumbai",
+     "Lucknow",
+     "Bhopal",
+     "Bhubaneswar",
+     "Guwahati",
+     "Panaji",
+     "Solan"
+    ],
+    [],
+    [],
+    [
+     "Sivasagar",
+     "Tezpur",
+     "Jorhat"
+    ],
+    [
+     "Hyderabad"
+    ]
+   ]
+  }
+ ],
+ "captions": {
+  "sv-built": "The finished community centre",
+  "sv-valley": "The site in Suru Valley",
+  "sv-site": "Clearing the site",
+  "sv-mud": "Walls of rock and mud",
+  "sv-frame": "Site & Process",
+  "sv-team": "Site & Process",
+  "sv-roof": "Site & Process",
+  "sv-crowd": "The team",
+  "ar-aikyam": "Render of the towers",
+  "ak-context": "Site study",
+  "ak-master": "Master plan",
+  "ak-views": "Views",
+  "ak-section": "Section",
+  "ar-leaf": "Aerial render",
+  "lf-site": "Site plan",
+  "lf-first": "First floor plan",
+  "lf-sections": "Sections and elevations",
+  "lf-views": "Views",
+  "lf-entrance": "Entrance view",
+  "lf-details": "Facade panel details",
+  "ar-showroom": "Render",
+  "sh-concept": "Climate study and concept",
+  "sh-plans": "Plans",
+  "sh-truss": "Roof truss details",
+  "sh-views": "Views",
+  "sh-workshop": "Workshop section",
+  "sh-joinery": "Column and joint details",
+  "ar-niravanam": "Render",
+  "nv-concept": "Concept: the gates of Ahmedabad",
+  "nv-site": "Site plan and zoning",
+  "nv-floors": "Floor plans",
+  "nv-rooms": "Room layouts",
+  "nv-views": "Views",
+  "nv-services": "Basement services",
+  "ar-admin": "Ground floor plan",
+  "wd-plans": "Ground floor and foundation plans",
+  "wd-sections": "Sections",
+  "wd-stairs": "Staircase details",
+  "wd-toilet": "Toilet details",
+  "pr-enpro": "View of the building",
+  "en-toilet": "Tender drawing: toilet details",
+  "en-flooring": "Tender drawing: flooring details",
+  "en-centerline": "Working drawing: centre line plan",
+  "pr-stair": "Working drawing: steel staircase",
+  "pr-hitay": "View of the plant",
+  "pr-hostel": "Nashik: hostel, cut-away view",
+  "pr-bungalow": "Nashik: vice-chancellor’s bungalow, cut-away view",
+  "pr-court": "Nashik: basketball court view",
+  "pr-ycmou": "Nashik: multipurpose building, cut-away view",
+  "ym-first": "Nashik: multipurpose building, first floor",
+  "ym-bungalow1": "Nashik: bungalow, second view",
+  "ym-staff1": "Staff housing, option 1",
+  "ym-staff2": "Staff housing, option 2",
+  "rs-cover": "Brochure cover",
+  "rs-intro": "Opening spread",
+  "rs-heritage": "Opening spread: Goan heritage",
+  "rs-location": "Location map",
+  "rs-plans": "Floor plans",
+  "rs-roof": "Roof plan",
+  "rs-area": "Area statement",
+  "rs-mood": "Closing spread",
+  "tj-render": "3D view of the temple approach",
+  "tj-court": "3D view of the forecourt",
+  "ud-tuljapur-plan": "Proposed Master plan",
+  "tj-location": "Town Location",
+  "tj-context": "Routes and traffic",
+  "tj-analysis": "Route analysis",
+  "tj-experience": "User experience map",
+  "tj-section": "Section",
+  "tj-materials": "Material palette: local stone and terracotta",
+  "ud-kolhapur-plan": "Intervention plan",
+  "ud-kolhapur-fg": "Figure-ground map",
+  "kp-city": "Sports places in the city",
+  "kp-analysis": "Site analysis",
+  "kp-landuse": "Land use",
+  "kp-streets": "Street map",
+  "kp-strategy": "Strategies plan",
+  "pl-cooch": "Land-use plan",
+  "cb-region": "Regional setting",
+  "cb-foodpark": "Food park concept",
+  "cb-site": "Site selection",
+  "cb-transport": "Transport network",
+  "cb-zone": "Industrial zone layout",
+  "pl-bbsr": "Ward maps: density, literacy and income",
+  "bb-density": "Population density, 2011",
+  "bb-density45": "Population density, 2045",
+  "bb-pop": "Population breakdown",
+  "bb-literacy": "Literacy by ward",
+  "bb-income": "Income by ward",
+  "bb-lorenz": "Income inequality curve",
+  "pl-mumbai": "Flood hotspots",
+  "mb-why": "Why Mumbai floods",
+  "mb-exposure": "Exposure maps",
+  "mb-access": "Access to services",
+  "mb-drainage": "Hotspots and informal settlements",
+  "mb-proposals": "Proposals",
+  "pl-kgp": "Aerial view of the ward",
+  "kg-ward": "Ward map",
+  "kg-lidar": "LiDAR survey",
+  "kg-issues": "Issues on site",
+  "kg-layout": "Site layout",
+  "kg-units": "32 m² home plans",
+  "kg-cost": "Cost estimate",
+  "jg-map": "Cities the work covered",
+  "img/u/79008e1644939027cdee8f4d6f0ab5f0.webp": "",
+  "img/u/3fc8ce4abe0393b08b4520314aa2fbbc.webp": "",
+  "img/u/af3e71c965faf48bf0708c366be6947c.webp": "",
+  "img/u/0178aeb5096cccc358589d04816b6497.webp": "",
+  "img/u/5c4f8997659286adb7ca043c44500563.webp": "",
+  "img/u/673b7e85a2c7041896a1d5d55b18d688.webp": "",
+  "img/u/a55394ac2b5d21f4b632e52e12e42cdb.webp": "",
+  "img/u/2a55fbbeadd5dd35f1796362f200123d.webp": "Views",
+  "img/u/7d7728f51cf88a35f74b9e3d75062b74.webp": "Front View",
+  "img/u/781d35b57fe2fd1edc0e9cf97d8fa348.webp": "",
+  "img/u/201f4e162f4835b176c6d4645cd4c6b1.webp": "",
+  "img/u/71e54d350f9f01c06b90f467697f2af2.webp": "Basement Details",
+  "img/u/48008d1a26cead0a14914cd30055f35b.webp": "Floor plans, sections, staircase and toilet details",
+  "img/u/54408cbc873a1793ef0ad3e1c563ac69.webp": "Entrance view of the temple complex",
+  "img/u/4dd7ab6b471a6b1cec745085a59e16e2.webp": "User experience map",
+  "img/u/e69829605503979005fd6dc4b9daf18d.webp": "Street elevations",
+  "img/u/5f8c3c70acff1dde1bec55b7da5d9bef.webp": "Material palette",
+  "img/u/bd79721054ada782d4c8de0bb61da866.webp": "Temple forecourt",
+  "img/u/c3feaa388adf16438f9746e1f55c884e.webp": "Heritage gallery and food court",
+  "img/u/9f1469751c51984d439ccc273d634e50.webp": "Strategies Plan",
+  "img/u/b38293bf410fbe90575d4badf174cc1b.webp": "Intervention Plan",
+  "img/u/38e5764e547afd735174ad42b7bf64ed.webp": "Detail Plan",
+  "img/u/a80c9cbace554c21d9341611aff20868.webp": "Administration + Accommodation Block",
+  "img/u/64e5d1764cd4c8a30ce3275c7afb0004.webp": "Proposed land use",
+  "img/u/0b2d08df0f88aa66e923333b7820adcc.webp": "Transportation and Infrastructure",
+  "img/u/b4f60f5b2942e8ce6baff9f8307d68a2.webp": "Spatial Analysis",
+  "img/u/71dfec527e98ec2744aca55b2d5ff52c.webp": "Spatial Analysis",
+  "img/u/b0e93c73cced371ad4b1fdb5b5088c8e.webp": "Spatial Analysis",
+  "img/u/5876a1fef3d68ba0a25990889bfcc774.webp": "Spatial Analysis – Population Density",
+  "img/u/f3ea32e7e070cc3fd175c3914484d2a1.webp": ""
+ },
+ "contact": {
+  "eyebrow": "Contact",
+  "title": "",
+  "line": "",
+  "email": "ruhedgire@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/rachana-hedgire",
+  "feedback": {
+   "title": "comments",
+   "line": "",
+   "button": "Send"
+  }
+ }
+}
