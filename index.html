@@ -58,6 +58,7 @@ button{font:inherit; color:inherit}
 :focus-visible{outline:2px solid var(--accent); outline-offset:4px}
 
 /* ---------- stage ---------- */
+html{overflow-x:clip}
 #stage{position:fixed; inset:0; width:100%; height:100%; display:block; z-index:0; touch-action:pan-y; cursor:grab}
 html.grabbing #stage, html.grabbing{cursor:grabbing}
 .no-webgl #stage{display:none}
@@ -208,6 +209,15 @@ h1 span{display:block}
 .portrait .ini{position:absolute; inset:0; display:grid; place-items:center; font:200 clamp(2.4rem,5vw,3.6rem)/1 var(--f-display); font-stretch:125%; letter-spacing:.06em; color:var(--ink-2); opacity:.55}
 .portrait::after{content:""; position:absolute; inset:8px; border:1px solid var(--line); pointer-events:none}
 .ph-btn{position:absolute; z-index:2; left:8px; right:8px; bottom:8px; justify-content:center; padding:7px 8px; border:0; background:var(--ink); color:var(--paper); font:500 10px/1.2 var(--f-mono); letter-spacing:.08em; text-transform:uppercase; cursor:pointer}
+.tl-list{display:none; list-style:none; margin:0; padding:0}
+.tl-list li{padding:14px 0 14px 14px; border-top:1px solid var(--rule); border-left:2px solid var(--accent); transition:opacity .3s}
+.tl-list li[data-lane="Education"]{border-left-color:var(--ink)}
+.tl-list li[data-lane="Research"]{border-left-color:var(--warm)}
+.tl-list h4{margin:4px 0 2px; font-size:1rem; font-weight:500; line-height:1.3}
+.tl-list .tl-sub{margin:0; font-size:.9rem; color:var(--ink-2)}
+.tl-mini{position:relative; display:block; height:3px; margin-top:10px; background:var(--rule)}
+.tl-mini i{position:absolute; top:0; bottom:0; background:currentColor; opacity:.55}
+.tl-list[data-filter="Education"] li:not([data-lane="Education"]),.tl-list[data-filter="Experience"] li:not([data-lane="Experience"]),.tl-list[data-filter="Research"] li:not([data-lane="Research"]){display:none}
 .tl-filter{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px}
 .tl-filter button{padding:6px 11px; border:1px solid var(--rule); background:none; font:500 10.5px/1 var(--f-mono); letter-spacing:.1em; text-transform:uppercase; color:var(--ink-2); cursor:pointer; transition:background .25s, color .25s, border-color .25s}
 .tl-filter button:hover{border-color:var(--ink); color:var(--ink)}
@@ -468,6 +478,9 @@ html.pv-lock{overflow:hidden}
   .portrait{width:min(170px, 46vw)}
   .tl{margin-left:0; overflow-x:auto; padding-left:0}
   .tl-lane,.tl-axis,.tl-grid{min-width:560px}
+  .tl,.tl-card{display:none}
+  .tl-list{display:block}
+  .psec h3.sec{font-size:clamp(1.5rem,8.2vw,2.2rem); overflow-wrap:anywhere}
   .tl-name{position:sticky; left:0; right:auto; display:block; width:max-content; top:auto; padding:2px 0 0; background:none}
   .facts{grid-template-columns:minmax(0,1fr)}
   .pv{grid-template-columns:minmax(0,1fr); grid-template-rows:minmax(0,52svh) minmax(0,1fr)}
@@ -479,8 +492,11 @@ html.pv-lock{overflow:hidden}
   .page-open .brand,.scrolled .brand{display:none}
   .brand{display:none}
   .navtabs a{white-space:nowrap}
-  .scrolled .contact{display:none}
+  .scrolled .contact,.gv-lock .contact{display:none}
   .thumbs{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:400px){
+  .top .contact{display:none}
 }
 @media (prefers-reduced-motion: reduce){ .sheet .in > *{opacity:1; transform:none} .tl-bar::before,.tl-bar b{animation:none !important} }
 
@@ -740,6 +756,7 @@ function renderAbout(){
         <div class="tl-cursor" aria-hidden="true"><span></span></div>
       </div>
       <div class="tl-card" id="tl-card" aria-live="polite"></div>
+      <ol class="tl-list" id="tl-list" data-filter="${tlFilter}">${tl.map((t, i) => Object.assign({i}, t)).sort((x, y) => x.a - y.a).map(t => `<li data-lane="${esc(t.lane)}"><p class="tl-lane-tag">${esc(t.lane)} · ${E('span', `about.timeline.${t.i}.when`, t.when)}</p>${E('h4', `about.timeline.${t.i}.title`, t.title)}${E('p', `about.timeline.${t.i}.sub`, t.sub, 'tl-sub')}<span class="tl-mini" aria-hidden="true"><i style="left:${yPct(t.a)}; width:calc(${yPct(t.b)} - ${yPct(t.a)})"></i></span></li>`).join('')}</ol>
     </div>
     <div class="glass card-pad facts" style="--d:2">
       ${a.lists.map((l, i) => `<div>${E('h3', `about.lists.${i}.title`, l.title)}<ul${l.chips ? ' class="chips"' : ''}>${l.items.map((it, j) => `<li>${E('span', `about.lists.${i}.items.${j}`, it)}</li>`).join('')}</ul></div>`).join('')}
@@ -798,7 +815,7 @@ $('#about').addEventListener('pointerout', e => { if (e.target.closest('#tl') &&
 $('#about').addEventListener('click', e => {
   if (e.target.closest('[data-copy]')) return $('#mail').click();
   if (e.target.closest('[data-photo]')) return pickImage(url => { C.about.photo = url; renderAbout(); });
-  const f = e.target.closest('[data-f]'); if (f){ tlFilter = f.dataset.f; $('#tl').dataset.filter = tlFilter; $$('.tl-filter button').forEach(b => b.setAttribute('aria-pressed', b === f ? 'true' : 'false')); return; }
+  const f = e.target.closest('[data-f]'); if (f){ tlFilter = f.dataset.f; $('#tl').dataset.filter = tlFilter; $('#tl-list').dataset.filter = tlFilter; $$('.tl-filter button').forEach(b => b.setAttribute('aria-pressed', b === f ? 'true' : 'false')); return; }
   if (editing && e.target.closest('[data-k]')) return;
   const b = e.target.closest('.tl-bar'); if (b) tlCard(+b.dataset.t);
 });
