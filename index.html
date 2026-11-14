@@ -719,7 +719,11 @@ function renderHero(){
 /* ---------- About me: a timeline that shows what overlapped ---------- */
 const LANES = ['Education', 'Experience', 'Research'];
 const Y0 = 2020, Y1 = 2027.6;
-const yPct = y => ((y - Y0) / (Y1 - Y0) * 100).toFixed(3) + '%';
+// the scale is squeezed before 2024 (the long B.Arch years) so the busy years after it get the room
+const YB = 2024, FB = .28;
+const yFrac = y => y < YB ? (y - Y0) / (YB - Y0) * FB : FB + (y - YB) / (Y1 - YB) * (1 - FB);
+const fracY = x => x < FB ? Y0 + x / FB * (YB - Y0) : YB + (x - FB) / (1 - FB) * (Y1 - YB);
+const yPct = y => (yFrac(y) * 100).toFixed(3) + '%';
 const nowY = () => { const d = new Date(); return d.getFullYear() + d.getMonth() / 12; };
 let tlFilter = 'All';
 function tracks(items){
@@ -751,7 +755,7 @@ function renderAbout(){
         <div class="tl-axis">${years.map(y => `<span style="left:${yPct(y)}">${y}</span>`).join('')}</div>
         <div class="tl-grid" aria-hidden="true">${years.map(y => `<i style="left:${yPct(y)}"></i>`).join('')}</div>
         ${lanes.map(l => `<div class="tl-lane" data-lane="${l.L}" style="--rows:${l.n}"><span class="tl-name">${l.L}</span>
-          ${l.its.map(t => `<button class="tl-bar${t.a > 2025.6 ? ' end' : ''}" type="button" data-t="${t.i}" style="left:${yPct(t.a)}; width:calc(${yPct(t.b)} - ${yPct(t.a)}); --row:${t._row}; --at:${((t.a - Y0) / (Y1 - Y0)).toFixed(3)}"><b>${esc(t.title)}</b></button>`).join('')}</div>`).join('')}
+          ${l.its.map(t => `<button class="tl-bar${t.a > 2025.6 ? ' end' : ''}" type="button" data-t="${t.i}" style="left:${yPct(t.a)}; width:calc(${yPct(t.b)} - ${yPct(t.a)}); --row:${t._row}; --at:${yFrac(t.a).toFixed(3)}"><b>${esc(t.title)}</b></button>`).join('')}</div>`).join('')}
         <div class="tl-now" style="left:${yPct(ny)}"><span>Now</span></div>
         <div class="tl-cursor" aria-hidden="true"><span></span></div>
       </div>
@@ -808,7 +812,7 @@ $('#about').addEventListener('focusin', e => { const b = e.target.closest('.tl-b
 $('#about').addEventListener('pointermove', e => {
   const tl = e.target.closest('#tl'); if (!tl){ return; }
   const r = tl.getBoundingClientRect(), x = clamp((e.clientX - r.left) / r.width, 0, 1);
-  tlYear(Y0 + x * (Y1 - Y0));
+  tlYear(fracY(x));
 });
 $('#about').addEventListener('pointerleave', () => tlYear(null), true);
 $('#about').addEventListener('pointerout', e => { if (e.target.closest('#tl') && !(e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('#tl'))) tlYear(null); });
