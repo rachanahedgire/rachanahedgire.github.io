@@ -1302,7 +1302,8 @@ function spy(force){
   if (!aboutOpen && api){ api.blend(VIEW(ids[i]), VIEW(ids[j]), f); api.sheet(y > vh * .3); }
   { const w = aboutOpen ? 0 : ids[i] === 'contact' ? 1 : ids[j] === 'contact' ? f : 0, ls = $('#lstory'), duo = $('#contact .duo');
     storyOn = w > .01; ls.classList.toggle('on', storyOn); ls.style.opacity = w.toFixed(3);
-    if (duo && storyOn) ls.style.height = Math.max(130, Math.min(innerHeight * .5, innerHeight - duo.getBoundingClientRect().bottom - 40)) + 'px'; }
+    // size it from where the boxes sit once the page has scrolled to the end, so it keeps one size while scrolling
+    if (duo && storyOn){ const maxY = document.documentElement.scrollHeight - innerHeight, rest = duo.getBoundingClientRect().bottom - (maxY - y); ls.style.height = Math.max(130, Math.min(innerHeight * .5, innerHeight - rest - 40)) + 'px'; } }
   const scrolled = y > vh * .35;
   root.classList.toggle('scrolled', scrolled);
   $$('.hero .copy').forEach(el => { const k = clamp(1 - y / (vh * .55), 0, 1); el.style.opacity = k.toFixed(3); el.style.transform = `translateY(${(-(1 - k) * 40).toFixed(1)}px)`; });
